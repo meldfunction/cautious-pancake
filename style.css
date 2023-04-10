@@ -1,85 +1,128 @@
-/* Font properties */
+/* General */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-
-/* Color properties */
-body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
   color: #333;
-  background-color: #f5f5f5;
 }
 
-/* Box model properties */
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 20px;
+a {
+  color: #007AFF;
+  text-decoration: none;
 }
 
-.btn {
-  padding: 10px 20px;
-  border: 2px solid #333;
-  border-radius: 5px;
-}
-
-/* Display and positioning properties */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Header */
+header {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  z-index: 100;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
 }
 
-/* Flexbox properties */
-.features {
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
-/* Media query properties */
-@media (min-width: 768px) {
-  .container {
-    padding: 40px;
-  }
+nav ul li a {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 15px;
 }
 
-@media (max-width: 767px) {
-  .header {
-    flex-direction: column;
-  }
+/* Sections */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Transition and animation properties */
+.home-section {
+  background-color: #F5F5F5;
+}
+
+.features-section {
+  background-color: #fff;
+}
+
+.about-section {
+  background-color: #F5F5F5;
+}
+
+.section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 25px;
+  border: 1px solid #333;
+  border-radius: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
 .btn:hover {
   background-color: #333;
   color: #fff;
-  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(100%);
-  }
+.btn-primary {
+  background-color: #007AFF;
+  color: #fff;
 }
 
-.slide-in {
-  animation: slide 0.5s ease-in-out;
+.btn-learn-more {
+  background-color: #fff;
+  color: #007AFF;
+}
+
+/* Description */
+.description {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #F5F5F5;
+  padding: 20px;
+  z-index: 1;
+  text-align: left;
+}
+
+.feature:hover .description {
+  display: block;
 }
