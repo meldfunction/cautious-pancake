@@ -15,6 +15,77 @@ a {
 ul {
   list-style: none;
 }
+.about-section {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+}
+
+.about-section h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.about-section h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.about-section ul {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.about-section li {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.about-section li strong {
+  color: #333;
+}
+
+@media screen and (min-width: 768px) {
+  .about-section {
+    padding: 120px 0;
+  }
+
+  .about-section h2 {
+    font-size: 60px;
+    margin-bottom: 60px;
+  }
+
+  .about-section h3 {
+    font-size: 36px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .about-section p {
+    font-size: 20px;
+    line-height: 1.75;
+  }
+
+  .about-section li {
+    font-size: 20px;
+    line-height: 1.75;
+    margin-bottom: 15px;
+  }
+}
 
 li {
   margin-left: 1em;
