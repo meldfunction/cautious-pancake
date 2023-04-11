@@ -371,8 +371,7 @@ a:hover {
 }
 
 .glitch-shop {
-  grid-column: 1 / span 2;
-  grid-row: 2 / span 1;
+  grid-row: 3 / span 1;
 }
 
 .quality {
